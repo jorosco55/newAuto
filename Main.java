@@ -4,14 +4,25 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Truck newTruck = new Truck();
-        Car newCar = new Car();
+        Truck truck = new Truck();
+        truck.setMake("Ford");
+        truck.setModel("F-150");
+        truck.setYear("Fifty-Six");
 
-        newTruck.myAuto("Ford", "F-150", 2019);
-        newCar.myAuto("Chevy", "Impala", 1964);
+        Car car = new Car();
+        car.setMake("Chevy");
+        car.setModel("Impala");
+        car.setYear("Six-Duece!!");
+        car.setStereo("Alpine");
+        car.setSpeakers("Kickers");
 
-        System.out.println(newTruck.truckFeatures());
-        System.out.println(newCar.carFeatures());
+
+
+
+        System.out.println("Here is an Old School "+ truck.getMake() + " " + truck.getModel() + " " + truck.getYear());
+
+        System.out.println("This is an OG ride: " + car.getMake() + " " + car.getModel() + " " + car.getYear() + " For the riders, with customized " + car.getStereo() + " stereo" +
+                " and two 15 inch " + car.getSpeakers());
 
     }
 }

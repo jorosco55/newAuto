@@ -6,12 +6,12 @@ public class Truck extends Auto {
     String flatbed;
     String lifts;
 
-    public String truckFeatures() {
+    public String toString() {
         String bed = super.toString();
         bed += "\nFlatbed: "+ flatbed;
         String l = super.toString();
         l += "\nLifts: " + lifts;
-        return (make + model + year + bed + l);
+        return ( bed + l);
 
     }
 
